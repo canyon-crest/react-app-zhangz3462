@@ -1,5 +1,5 @@
-import './Card.css'
-import { useState } from 'react'
+import './Card.css';
+import { useState } from 'react';
 
 function Card ({name, description}){
     const [count, setCount] = useState(0);
@@ -9,7 +9,7 @@ function Card ({name, description}){
             <p>Description: {description}</p>
             <button onClick={() => setCount(count+1)}>Add {name} to cart</button>
             <button onClick={() => setCount(0)}>Reset</button>
-            <p>Total {name}: {count}</p>
+            <p>Total {name}s: {count}</p>
         </div>
     )
 }

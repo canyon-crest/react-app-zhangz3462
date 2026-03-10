@@ -4,17 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import Nav from './Nav.jsx'
 import Card from './Card.jsx'
-import Footer from './Footer.jsx'
-
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Nav />
-    <Card name="Apple" description="Apples are typically red/yellow."/>
-    <Card name="Orange" description="Oranges are typically orange."/>
-    <Card name="Banana" description="Bananas are typically yellow/green."/>
-    <Footer />
+    <p>I am not giving out my contact.</p>
   </StrictMode>,
 )
+
+export default Contact;

@@ -1,0 +1,14 @@
+.myCard {
+    background-color: rgb(82, 140, 190);
+    border: 4px solid #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    color: rgb(0, 0, 0);
+  }
+  
+.name {
+    color: #333;
+    font-size: 1.5rem;
+  }
+

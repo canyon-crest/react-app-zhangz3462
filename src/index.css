@@ -2,6 +2,9 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  width: 100%; /* Ensure it spans the full width */
+  margin: 0;   /* Remove auto margins that center it */
+  max-width: none; /* Remove any width limits */  
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -26,7 +29,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 1280px;
   min-height: 100vh;
 }
 
