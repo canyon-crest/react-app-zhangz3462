@@ -5,13 +5,12 @@ import App from './App.jsx'
 import Nav from './Nav.jsx'
 import Card from './Card.jsx'
 
+function Contact() {
+  return (
+    <div>
+      <p>I am not handing out my contact.</p>
+    </div>
+  )
+}
 
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Nav />
-    <p>I am not giving out my contact.</p>
-  </StrictMode>,
-)
-
-export default Contact;
+export default Contact

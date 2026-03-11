@@ -1,16 +1,15 @@
 import './Nav.css';
+import { useState } from 'react';
 
-
-
-function Nav(){
+function Nav({ setPage }){
     return(
         <div>
             <header>
             <nav>
             <ul>
-                <li><a href="./main.jsx">Home</a></li>
-                <li><a href="About.jsx">About</a></li>
-                <li>Contact</li>
+                <li onClick={() => setPage("home")}>Home</li>
+                <li onClick={() => setPage("other")}>Other</li>
+                <li onClick={() => setPage("contact")}>Contact</li>
             </ul>
             </nav>
             </header>
@@ -19,4 +18,4 @@ function Nav(){
     )
 }
 
-export default Nav;
+export default Nav

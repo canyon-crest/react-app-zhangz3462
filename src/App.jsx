@@ -1,33 +1,26 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Nav from './Nav.jsx'
+import Other from './Other.jsx'
+import Contact from './Contact.jsx'
+import { useState } from 'react';
+import Footer from './Footer.jsx'
+import Card from './Card.jsx'
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [page, setPage] = useState("home");
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Nav setPage={setPage}/>
+    {page === "home" && <div><Card name="Apple" description="Apples are typically red/yellow."/>
+    <Card name="Orange" description="Oranges are typically orange."/>
+    <Card name="Banana" description="Bananas are typically yellow/green."/></div>}
+    {page === "other" &&<Other />}
+    {page === "contact" &&<Contact />}
+    <Footer />
     </>
+
   )
 }
 

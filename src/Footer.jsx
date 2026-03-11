@@ -1,7 +1,5 @@
 import './Nav.css';
 
-
-
 function Footer(){
     return(
       <div id="Footer">
