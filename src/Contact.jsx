@@ -8,7 +8,7 @@ import Card from './Card.jsx'
 function Contact() {
   return (
     <div>
-      <p>I am not handing out my contact.</p>
+      <p>Reach me at fakeemail@gmail.com for more options! I sell fruits, screwdrivers and inflatable frogs.</p>
     </div>
   )
 }

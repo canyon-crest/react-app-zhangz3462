@@ -4,6 +4,8 @@ import Contact from './Contact.jsx'
 import { useState } from 'react';
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
+import './index.css'
+
 
 
 

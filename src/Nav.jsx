@@ -1,5 +1,7 @@
 import './Nav.css';
 import { useState } from 'react';
+import './index.css'
+
 
 function Nav({ setPage }){
     return(
