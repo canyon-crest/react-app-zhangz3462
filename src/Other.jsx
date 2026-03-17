@@ -10,9 +10,9 @@ import { useState } from 'react';
 function Other() {
   return(
     <>
-      <Card name="Lime" description="Limes are typically green."/>
-      <Card name="Blueberry" description="Blueberries are typically blue."/>
-      <Card name="Grape" description="Grapes are typically purple."/>
+      <Card name="Lyme" description="Has exceptionally smooth skin, but may transmit Lyme disease."/>
+      <Card name="Cyanberry" description="Very similar to a blueberry, but causes cyan discoloration of extremities."/>
+      <Card name="Plume" description="Exceptionally sweet! Side effects include feather growth in lungs."/>
     </>
   )
 

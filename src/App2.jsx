@@ -73,11 +73,11 @@ function App2() {
   // UI rendering
   return (
     <div>
-      <h1>Firebase + React App with Google Log-in</h1>
+      <h1>Buy Lab-Grown Fruits</h1>
       {/* If user is logged in, show greeting, logout button, and messages */}
       {user ? (
         <div>
-          <h2>Hello, {user.displayName}</h2>
+          <h2>Welcome, {user.displayName}!</h2>
           <button onClick={handleLogout}>Log Out</button>
 
           <ul>
@@ -91,8 +91,8 @@ function App2() {
       ) : (
         // If no user is logged in, show login button
         <div>
-          <p>Please log in with Google to continue.</p>
-          <button onClick={handleLogin}>Login with Google</button>
+          <p>Please log in with Google to order fruits!</p>
+          <button onClick={handleLogin}>Log in with Google</button>
         </div>
       )}
     </div>

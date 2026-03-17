@@ -5,6 +5,8 @@ import { useState } from 'react';
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
 import './index.css'
+import App2 from './App2.jsx'
+import AddItemForm from './firebaseStore.jsx'
 
 
 
@@ -14,10 +16,12 @@ function App() {
 
   return (
     <>
+    <App2 />
+    <AddItemForm />
     <Nav setPage={setPage}/>
-    {page === "home" && <div><Card name="Apple" description="Apples are typically red/yellow."/>
-    <Card name="Orange" description="Oranges are typically orange."/>
-    <Card name="Banana" description="Bananas are typically yellow/green."/></div>}
+    {page === "home" && <div><Card name="Regular Apple" description="Neon red! May cause violent hiccups."/>
+    <Card name=" 50% Transparency Orange" description="Tastes like a concept of a lemon, may cause increased bone malleability."/>
+    <Card name="Bananananana" description="Lasts for 50 years before rotting, but teeth may start growing on the surface."/></div>}
     {page === "other" &&<Other />}
     {page === "contact" &&<Contact />}
     <Footer />
