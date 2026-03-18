@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.jsx'
 import Nav from './Nav.jsx'
 import Card from './Card.jsx'
+import CatGenerator from './catGenerator.jsx'
+
 
 function Contact() {
   return (
@@ -16,7 +18,9 @@ function Contact() {
       <p>Due to my lack of research funding, some side effects may be present.</p>
       <p>Check out the descriptions on the fruits to know more!</p>
       <p>By the way, your data is NOT anonymous, and you are now signed up for my daily newsletters.</p>
-      <p> I appreciate any funding! Preferably in Bitcoin, but any type will do. Thanks!</p>
+      <p>I appreciate any funding! Preferably in Bitcoin, but any type will do. Thanks!</p>
+      <p>Some cat photos below !!</p>
+      <CatGenerator />
     </div>
   )
 }

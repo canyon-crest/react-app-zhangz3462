@@ -7,6 +7,7 @@ import Card from './Card.jsx'
 import './index.css'
 import App2 from './App2.jsx'
 import AddItemForm from './firebaseStore.jsx'
+import CatGenerator from './catGenerator.jsx'
 
 
 
