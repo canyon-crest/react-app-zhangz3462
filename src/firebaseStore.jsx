@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { db } from "./firebase"; // Path to your firebase config file
-import { collection, addDoc } from "firebase/firestore"; 
-import { doc, setDoc } from "firebase/firestore"; // Add doc and setDoc to your imports
+import { db } from "./firebase"; 
+import { doc, setDoc } from "firebase/firestore"; 
 
 function AddItemForm() {
   const [inputValue, setInputValue] = useState("");
@@ -12,8 +11,6 @@ function AddItemForm() {
     if (inputValue.trim() === "") return;
   
     try {
-      // doc(db, collection, documentID) points to the specific spot
-      // setDoc saves the data there (overwriting if it already exists)
       await setDoc(doc(db, "items", "SG20vIrbx1NTneLFGFhm"), {
         text: inputValue,
         createdAt: new Date()
@@ -34,7 +31,7 @@ function AddItemForm() {
         onChange={(e) => setInputValue(e.target.value)} 
         placeholder="Enter text..." 
       />
-      <button onClick={handleAddItem}>Add to Firestore</button>
+      <button onClick={handleAddItem}>Add to Database!</button>
     </div>
   );
 }

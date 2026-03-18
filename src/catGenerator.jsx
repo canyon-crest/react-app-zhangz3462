@@ -7,11 +7,9 @@ function CatGenerator() {
   const fetchCat = async () => {
     setLoading(true);
     try {
-      // The API returns an array of objects
       const response = await fetch("https://api.thecatapi.com/v1/images/search");
       const data = await response.json();
       
-      // We grab the 'url' from the first item in the array
       setCatUrl(data[0].url);
     } catch (error) {
       console.error("Error fetching cat:", error);
@@ -20,7 +18,6 @@ function CatGenerator() {
     }
   };
 
-  // Load a cat as soon as the page opens
   useEffect(() => {
     fetchCat();
   }, []);
